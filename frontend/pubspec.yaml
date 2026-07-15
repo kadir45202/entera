@@ -1,0 +1,69 @@
+name: entera
+description: Gut Health Tracker - Track your meals and symptoms with AI-powered analysis.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Navigation
+  go_router: ^13.0.1
+
+  # Supabase (Auth + Database)
+  supabase_flutter: ^2.3.4
+  flutter_dotenv: ^5.1.0
+
+  # AI (Gemini)
+  google_generative_ai: ^0.4.0
+
+  # Local Storage (Offline-first)
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+
+  # Camera & Image
+  image_picker: ^1.0.7
+  
+  # UI Components
+  shimmer: ^3.0.0
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.1
+  google_fonts: ^6.1.0
+  gap: ^3.0.1
+
+  # Utilities
+  uuid: ^4.2.2
+  intl: ^0.19.0
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+  # Icons
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  
+  # Code Generation
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.3.9
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+  # Integration Testing
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
